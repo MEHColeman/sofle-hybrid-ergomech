@@ -56,6 +56,8 @@
 &trans             &trans           &trans           &trans           &trans           &trans           &rgb_ug RGB_TOG    &trans  &trans  &trans          &trans       &trans      &trans  &trans
                                     &trans           &trans           &trans           &trans           &trans             &trans  &trans  &kp C_PREVIOUS  &kp C_PAUSE  &kp C_NEXT
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         game_layer {
@@ -79,9 +81,7 @@
                            &tog 0         &trans         &trans         &trans          &trans    &mo 3   &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         qwerty {
@@ -92,6 +92,8 @@
 &trans  &kp Z   &kp X   &kp C   &kp V   &kp B   &trans    &trans  &kp N   &kp M   &kp COMMA  &kp DOT  &trans    &trans
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans     &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
