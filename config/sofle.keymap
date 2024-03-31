@@ -50,11 +50,11 @@
         raise_hyper_layer {
             label = "3";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 1   &trans  &trans  &trans  &trans                    &trans  &trans          &trans       &trans      &trans  &bootloader
-&trans      &bt BT_DISC 0  &trans  &trans  &trans  &trans                    &trans  &trans          &trans       &trans      &trans  &bl BL_TOG
-&trans      &trans         &trans  &trans  &trans  &trans                    &trans  &trans          &trans       &trans      &trans  &trans
-&trans      &trans         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans       &trans      &trans  &trans
-                           &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp C_PREVIOUS  &kp C_PAUSE  &kp C_NEXT
+&bt BT_CLR  &bt BT_SEL 1  &trans  &trans  &trans  &trans                    &trans  &trans          &trans       &trans      &trans  &bootloader
+&trans      &trans        &trans  &trans  &trans  &trans                    &trans  &trans          &trans       &trans      &trans  &bl BL_TOG
+&trans      &trans        &trans  &trans  &trans  &trans                    &trans  &trans          &trans       &trans      &trans  &trans
+&trans      &trans        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans       &trans      &trans  &trans
+                          &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp C_PREVIOUS  &kp C_PAUSE  &kp C_NEXT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
