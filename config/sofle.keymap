@@ -1,5 +1,4 @@
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
@@ -63,22 +62,22 @@
         game_layer {
             label = "adjust";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans   &trans  &trans
-&trans  &trans  &trans  &none   &none   &none                       &none  &none  &none  &none   &none  &none
-&trans  &none   &none   &none   &none   &none      &trans    &none  &none  &none  &none  &none   &none  &none
-                &none   &none   &none   &kp SPACE  &none     &none  &none  &none  &none  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &kp SPACE  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         hardware_layer {
             label = "hardware_layer";
             bindings = <
-&trans      &trans         &trans         &trans         &trans         &trans                            &trans  &trans  &trans  &trans  &trans         &trans
-&trans      &trans         &trans         &trans         &trans         &trans                            &trans  &trans  &trans  &trans  &trans         &trans
-&trans      &trans         &trans         &trans         &trans         &trans                            &trans  &trans  &trans  &trans  &trans         &trans
-&trans      &trans         &trans         &trans         &trans         &trans          &trans    &trans  &trans  &trans  &trans  &trans  &trans         &to 0
-                           &tog 0         &trans         &trans         &trans          &trans    &mo 3   &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &to 0
+                &tog 0  &trans  &trans  &trans  &trans    &mo 3   &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
